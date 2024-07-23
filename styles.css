@@ -1,0 +1,261 @@
+html, body {
+    min-width: 1400px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f0f8ff;
+}
+
+
+.header{
+    display: flex;
+    background:url('KKKKKK.jpeg') no-repeat center center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    color: white;
+    border-radius: 50px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out; 
+}
+h1{
+    margin-top: 450px;
+    display: flex;
+   flex-direction: column;
+   gap: 0,1rem;
+}
+
+
+.header.animated {
+    opacity: 1;
+    transform: scale(1);
+}
+.word {
+    margin-right: 0.5rem; /* Atstarpe starp vārdiem */
+}
+
+.word:last-child {
+    margin-right: 0; /* Pēdējam vārdam nav labās malas atstarpes */
+}
+
+.letter {
+    display: inline-block;
+    margin-right: 0,5rem;;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.letter.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 400px 500px;
+    grid-template-rows: 500px;
+    grid-template-areas:
+    "pic tex lok";
+    gap: 3rem;
+    padding: 30px 10px 2px 30px ;
+  
+}
+.pic{
+    width: 400px;
+    height: auto;
+    grid-area: pic;
+border-radius: 50px;
+
+}
+.tex{
+    text-align: center;
+    
+}
+
+.lok{
+  font-weight: bold;
+   font-size: 20px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+iframe{
+
+    width: 400px;
+    height: 450px;
+
+
+}
+h2{
+    text-align: center;
+    font-size: 70px;
+        
+    }
+    #dat{
+        font-size: 50px;
+        font-family: 'Times New Roman';
+    
+    }
+    #iera{
+    
+        font-size: 40px;
+        font-family: 'Times New Roman';
+    }
+    #sag{
+        font-size: 25px;
+        line-height: 20px;
+        font-family: 'Times New Roman';
+    
+    }
+    
+    #cer{
+        font-size: 40px;
+        font-family: 'Times New Roman';
+    }
+
+    .dreskod{
+    display: grid;
+    grid-template-columns: 400px 500px 400px;
+    grid-template-rows: 500px ;
+    padding: 0px 10px 10 0px 30px ;
+    grid-template-areas:
+    "tex2 pic";
+
+    }
+    
+#it{
+    font-size: 50px;
+font-weight: bold;
+}
+#it1{
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif
+}
+
+#it2{
+font-weight: bold;
+font-size: 40px;
+
+}
+
+#it3{
+    font-weight: bold;
+    font-size: 40px;
+    
+    
+    }
+.pic2{
+    width: 400px;
+    height: 400pxx;
+    grid-column: 3;
+
+
+
+}
+
+p{
+font-size:30px ;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+.tex2{
+
+    grid-column: 1/span 2;
+}
+
+form{
+display: flex;
+flex-direction: column;
+width: 300px;
+gap: 10px;
+
+
+}
+#Es{
+font-weight: bold;
+font-size: 30px;
+
+}
+button{
+background-color: red;
+width: 70px;
+height: 50px;
+border-radius: 5px;
+
+}
+input{
+width: 300px;
+border-color: greenyellow;
+
+}
+select{
+    width: 300px;
+    border-color: greenyellow;
+
+}
+footer{
+font-weight: bold;
+text-align: center ;
+}
+
+
+#lot{
+font-size: 27px;
+
+}
+.heart {
+    position: relative;
+    width: 40px;
+    height: 28px;
+    display: inline-block;
+}
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 30px;
+    border-radius: 100px 100px 0 0;
+    background: blue;
+}
+.heart::before {
+    left: 18px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+.heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.heart {
+    animation: pulse 1s infinite;
+}
+
+.forma{
+ display: grid;
+ grid-template-columns: 500px 500px;
+ grid-template-rows: 300px ;
+ padding: 0px 10px 50px 30px ;
+}
+
+.pic3{
+border-radius: 90px;
+
+}
+
+
